@@ -12,11 +12,12 @@
 	</div>
 	<div>
 		<h2>Input</h2>
+		<!-- ボタンが押されたら、内容を消去する -->
 		<div>
 			Title<input type="text" name="textTitle" id="textTitle">
 		</div>
 		<div>
-			Context<input type="text" name="diary" id="textAreaContext">
+			Context<textarea type="text" name="diary" id="textAreaContext"></textarea>
 			<!-- Context<textarea name="diary" id="textAreaContext" cols="30" rows="10"></textarea> -->
 		</div>
 		<div>
@@ -25,10 +26,8 @@
 	</div>
 	<div>
 		<h2>Output</h2>
-		Title<input type="text" name="outTextTitle" id="outTextTitle">
-		Context<input type="text" name="outTextContext" id="outTextContext">
-		<!-- <p id="outTextTitle"></p> -->
-		<!-- <p id="outTextContext"></p> -->
+		<!-- ボタンが押されるたびに、下方へ表示し続ける -->
+			<div id="diaryUnorderedList"></div>
 	</div>
 
 	<script src="js/main.js"></script>
